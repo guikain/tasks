@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LoP3IK4DGFbtiutlDETREskVT7ytLy7lRKyDwINOAL5U1CP/4BK5ctPd46WGBXV8Y7hD0IVYR0U9YrypNqVJ6Q==",
+  "dgSpecHash": "yHi9LQmFCmea8/5X90SUso5frgVb37Giuw40ln7X1wkybuVQ8+tUnoIcN1jczsV5sJ1nygGBy5k07g2VVeJZhg==",
   "success": true,
-  "projectFilePath": "C:\\Git\\FazendoDoZero\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Git\\tasks\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guilh\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\guilh\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.3\\microsoft.extensions.apidescription.server.6.0.3.nupkg.sha512",
