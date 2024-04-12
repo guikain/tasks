@@ -57,11 +57,18 @@ class MyWeb{
         //get todos competas
         app.MapGet("/tasks/completed", () => {
             List<Todo> completas = todos.Where(ta => ta.IsComplete.Equals(true)).ToList();
+            if(completas.Count() == 0){
+                return Results.BadRequest("Nao foi localizada nenhuma tarefa.");
+            }
             return Results.Ok(completas);
         });
 
         app.MapGet("/tasks/{id}", ([FromRoute] string id) => {
-            return Results.Ok(todos.FirstOrDefault(t => t.Id.ToString().Equals(id)));
+            var todo = todos.FirstOrDefault(t => t.Id.ToString().Equals(id));
+            if(todo == null){
+                return Results.NotFound("Pagina nao encontrada.");
+            }
+            return Results.Ok(todo);
         });
 
         app.MapPost("/tasks", ([FromBody] Todo todo) => {
